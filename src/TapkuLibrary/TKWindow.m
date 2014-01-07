@@ -47,7 +47,7 @@ NSString *TKWindowShakeEnded = @"motionEnded";
 - (void) motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event {
 	[[NSNotificationCenter defaultCenter] postNotificationName:TKWindowShakeCancelled object:self];
 }
-- (void) motionEnded:withEvent:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+- (void) motionEndedwithEventSubtype:(UIEventSubtype)motion withEvent:(UIEvent *)event {
 	[[NSNotificationCenter defaultCenter] postNotificationName:TKWindowShakeEnded object:self];
 }
 
