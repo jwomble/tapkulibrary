@@ -44,7 +44,7 @@
 	UIImageView *topBackground, *shadow;
 	UILabel *monthYear;
 	UIScrollView *tileBox;
-	BOOL sunday;
+	
 
 	id <TKCalendarMonthViewDelegate> __unsafe_unretained delegate;
 	id <TKCalendarMonthViewDataSource> __unsafe_unretained dataSource;
@@ -54,6 +54,7 @@
 
 @property (nonatomic,unsafe_unretained) id <TKCalendarMonthViewDelegate> delegate;
 @property (nonatomic,unsafe_unretained) id <TKCalendarMonthViewDataSource> dataSource;
+@property (nonatomic) BOOL sunday;
 
 - (NSDate*) dateSelected;
 - (NSDate*) monthDate;
