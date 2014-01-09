@@ -640,12 +640,19 @@
 #pragma mark -
 @implementation TKCalendarMonthView
 @synthesize delegate,dataSource;
+@synthesize sunday;
 
 
 - (id) init{
 	self = [self initWithSundayAsFirst:YES];
 	return self;
 }
+
+- (id) initWithCoder:(NSCoder *)aDecoder{
+   self = [self initWithSundayAsFirst:YES];
+   return self;
+}
+
 - (id) initWithSundayAsFirst:(BOOL)s{
 	if (!(self = [super initWithFrame:CGRectZero])) return nil;
 	self.backgroundColor = [UIColor grayColor];
