@@ -37,13 +37,14 @@
 
 @interface TKCalendarMonthViewController : UIViewController <TKCalendarMonthViewDelegate,TKCalendarMonthViewDataSource> {
 	TKCalendarMonthView *_monthView;
-	BOOL _sundayFirst;
+	//BOOL _sundayFirst;
 }
 
 - (id) init;
 - (id) initWithSunday:(BOOL)sundayFirst;
 
 @property (strong,nonatomic) TKCalendarMonthView *monthView;
+@property (nonatomic) BOOL sundayFirst;
 
 
 @end
